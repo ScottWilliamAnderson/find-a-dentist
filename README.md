@@ -23,12 +23,10 @@ optional arguments:
 ```
 
 # TODO
-add address field
-    done
-add phone number field
-    done
-add average review field
-add total review numbers field
-add most common keywords in reviews field
-add number of dentists max option
-add api call to calculate distance to postcode (pgeocode)
+- [x] add address field
+- [x] add phone number field
+- [ ] add average review field
+- [ ] add total review numbers field
+- [ ] add most common keywords in reviews field
+- [ ] add number of dentists max option
+- [ ] add api call to calculate distance to postcode (pgeocode)
