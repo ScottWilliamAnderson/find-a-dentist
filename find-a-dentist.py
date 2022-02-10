@@ -66,10 +66,19 @@ def dentist_search(postcode):
             browser.get(dentist_url)
             dentist_name = browser.find_elements_by_css_selector("#page-heading-org-name")
             dentist_status = browser.find_elements_by_css_selector("#dentist_taking_patients_header ~ *")
+            dentist_address = browser.find_elements_by_id("address_panel_address")
+            # set phone num to not provided as default to catch exception 
+            dentist_phone = "Not Provided"
+            try:
+                dentist_phone = browser.find_elements_by_id("contact_info_panel_phone_text")[0].text
+            except:
+                pass
             availabilities.append({
                 "dentist_name": dentist_name[0].text,
                 "dentist_status": dentist_status[0].text,
-                "dentist_url": dentist_url
+                "dentist_url": dentist_url,
+                "dentist_address": dentist_address[0].text,
+                "dentist_phone": dentist_phone
             })
             progress(index, len(list_of_dentist_urls), suffix="")
 

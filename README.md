@@ -21,3 +21,14 @@ optional arguments:
   -s, --silent                          hide console output
   -p POSTCODE, --postcode POSTCODE      postcode for search area
 ```
+
+# TODO
+add address field
+    done
+add phone number field
+    done
+add average review field
+add total review numbers field
+add most common keywords in reviews field
+add number of dentists max option
+add api call to calculate distance to postcode 
