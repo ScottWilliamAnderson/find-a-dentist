@@ -31,4 +31,4 @@ add average review field
 add total review numbers field
 add most common keywords in reviews field
 add number of dentists max option
-add api call to calculate distance to postcode 
+add api call to calculate distance to postcode (pgeocode)
